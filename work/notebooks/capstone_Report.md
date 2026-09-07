@@ -1,8 +1,8 @@
 # Capstone Report — <your lane>
 
-- **Author:**
-- **Lane:**
-- **Repo:**
+- **Author:** Mariam Emad Labib
+- **Lane:** Prediction / Classification (search ranking decay detection)
+- **Repo:** https://github.com/mariamemad975/FlyRank_ML
 - **Date:**
 
 > Copy this file to `work/capstone_report.md` and fill it in as you build. Sections 1–8
