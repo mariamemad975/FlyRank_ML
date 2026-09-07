@@ -1,9 +1,9 @@
 # Capstone Report — <your lane>
 
 - **Author:** Mariam Emad Labib
-- **Lane:** Prediction / Classification (search ranking decay detection)
+- **Lane:** Prediction / Classification [search ranking decay detection]
 - **Repo:** https://github.com/mariamemad975/FlyRank_ML
-- **Date:**
+- **Date:** 
 
 
 ## 0. Abstract
@@ -89,16 +89,4 @@ All train/test splitting and model training use random_state=42 for reproducibil
 
 ## 9. Acknowledgments & data credit
 
-One short section at the bottom of the deployed paper: "Built on the FlyRank ML Internship
-dataset" **linking to https://flyrank.ai**. Crediting your data source is standard research
-practice — and it's on the capstone's required-section list, so a paper without it isn't done.
-
----
-
-> **Claims checklist before submitting:** observed / measured / directional / decision-support
-> **Metrics vs. base rate:** report your task's base rate (majority-class %) next to any
-> precision@K or accuracy — a high score can just be a high base rate. AUC / lift over
-> baseline are the honest discrimination numbers.
-> language everywhere · no causal claims without an experiment or causal design · no
-> "predicted Google's algorithm" · no client-identifying details · numbers in this report
-> match a fresh re-run.
+Built on the FlyRank ML Internship dataset —  ⁠FlyRank AI. Special thanks to the FlyRank Machine Learning Program and my mentor for providing the project structure, real-world data, and emphasis on transparent, evidence-based claims throughout this work.
