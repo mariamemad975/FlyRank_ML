@@ -59,6 +59,9 @@ The majority-class baseline achieved 50.1% accuracy, while the Logistic Regressi
 
 The error analysis reflects the deliberate recall-oriented design. The model misses only about 3% of genuinely decaying pages, but approximately one-third of the pages it flags are healthy pages. This creates additional review work but is an acceptable trade-off for a screening system where missing a decaying page is more costly than reviewing a false alarm.
 
+<img width="582" height="455" alt="image" src="https://github.com/user-attachments/assets/e9829f91-9bf9-47f2-b2c7-612110464235" />
+
+
 ## 6. Interpretation
 
 The model found that ctr_last30 was the strongest feature, while anon_share and rare_share had smaller contributions. visible_queries and top_query_share had minimal impact on the model’s predictions. This indicates that recent CTR behavior was the main signal associated with decay predictions.
