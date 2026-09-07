@@ -5,15 +5,11 @@
 - **Repo:** https://github.com/mariamemad975/FlyRank_ML
 - **Date:**
 
-> Copy this file to `work/capstone_report.md` and fill it in as you build. Sections 1–8
-> mirror the Pass / Needs-Work rubric axes, so nothing here is optional. Sections 0 and 9
-> are **paper sections**: your deployed research paper must carry both, and they're here so
-> you never rebuild them from memory at ship time.
 
 ## 0. Abstract
 
-Five sentences, written last, placed first: question → data → method → headline result →
-what the output is for. This is the top of your deployed paper.
+Can machine learning reliably detect web pages at risk of search-ranking decay so that content teams can prioritize reviews? Using approximately 79 million rows of FlyRank search and engagement data, the study represents each content page through signals including click-through rate, search impressions, and query-footprint characteristics. A binary classification model was trained and tuned for high recall because missing a genuinely decaying page is more costly than reviewing a healthy page. The model achieved 81.9% accuracy and 97% recall for decaying pages, outperforming the 50.1% majority-class baseline. The resulting decay flag and probability score are used to create a prioritized human-review queue, helping SEO and content teams identify potentially declining pages before performance losses become more difficult to reverse.
+
 
 ## 1. Problem framing
 
