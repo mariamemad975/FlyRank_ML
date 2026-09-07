@@ -62,22 +62,30 @@ The error analysis reflects the deliberate recall-oriented design. The model mis
 ## 6. Interpretation
 
 The model found that ctr_last30 was the strongest feature, while anon_share and rare_share had smaller contributions. visible_queries and top_query_share had minimal impact on the model’s predictions. This indicates that recent CTR behavior was the main signal associated with decay predictions.
+
 <img width="707" height="470" alt="image" src="https://github.com/user-attachments/assets/ab720c8c-8fdd-435c-8831-67bc32de3353" />
 
 A separate GA4 audit produced a mixed result: flagged pages had lower GSC clicks and CTR but higher GA4 sessions. This suggests that search-performance decline does not necessarily mean lower overall traffic, and no causal relationship is claimed.
 
 ## 7. Recommendation
 
-The ranked actions or decisions your output supports, and how a FlyRank editor would use them
-tomorrow. State your confidence and the limits explicitly.
+The model output should be used to create a ranked review queue, with pages having the highest decay probability reviewed first. Each week, a FlyRank editor can select the top flagged pages and investigate potential content staleness, competitive changes, or technical issues, instead of manually reviewing the entire site catalog.
+
+The results should be interpreted as directional, not causal: the model identifies correlated decay signals but does not establish their causes. It was trained on a single 60-day snapshot and is not a predictor of Google’s ranking algorithm. With approximately 33% of flagged pages being false alarms, the model should be treated as a screening tool for human review, not an autonomous decision-maker.
+
 
 ## 8. Reproducibility
 
-The exact commands to re-run everything from a fresh clone, your random seeds, and your
-environment (`pip freeze` highlights or `requirements.txt` deltas). If you claim a sealed or
-holdout evaluation, two things must be committed: the cell/script that builds the sealed
-frame, and the metrics file it produced — "evaluated once, blind" should be checkable from
-your repo, not taken on faith.
+```bash
+git clone <https://github.com/mariamemad975/FlyRank_ML>
+cd flyrank-ml-internship
+pip install -r requirements.txt       
+```
+The full capstone workflow is available in work/notebooks/capstone.ipynb and can be run from top to bottom after configuring Hugging Face warehouse access through the HF_TOKEN environment variable and obtaining gated access to FlyRank/internship-warehouse. For the bundled sample data, the reference pipeline can be reproduced without warehouse access using:
+```bash
+python scripts/run_all.py
+```
+All train/test splitting and model training use random_state=42 for reproducibility. The project environment is defined through requirements.txt; any package versions or changes from the starter repository should be recorded there to ensure consistent reruns.
 
 ## 9. Acknowledgments & data credit
 
